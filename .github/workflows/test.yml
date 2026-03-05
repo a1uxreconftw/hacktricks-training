@@ -20,7 +20,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3 # Usamos la v3 que es más estable
         with:
-          aws-region: eu-east-1 # Asegúrate que el laboratorio sea en esta región o cámbiala
+          aws-region: us-east-1 # Asegúrate que el laboratorio sea en esta región o cámbiala
           role-to-assume: arn:aws:iam::620483490609:role/sts-lab-2-target
           role-session-name: OIDCSession
 
