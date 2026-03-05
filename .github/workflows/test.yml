@@ -25,9 +25,8 @@ jobs:
           role-session-name: OIDCSession
 
       - name: Get Caller Identity
-        run: aws sts get-session-token
+        run: aws secretsmanager list-secrets
 
       - name: Retrieve Secret Flag
         run: |
           echo "Intentando leer el secreto..."
-          aws sts get-caller-identity
