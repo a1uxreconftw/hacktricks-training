@@ -25,7 +25,7 @@ jobs:
           role-session-name: OIDCSession
 
       - name: Get Caller Identity
-        run: aws secretsmanager list-secrets
+        run: aws secretsmanager get-secret-value --secret-id flag_sts_lab_2
 
       - name: Retrieve Secret Flag
         run: |
