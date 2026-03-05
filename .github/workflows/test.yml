@@ -25,7 +25,7 @@ jobs:
           role-session-name: OIDCSession
 
       - name: Get Caller Identity
-        run: aws sts get-caller-identity
+        run: aws sts get-session-token
 
       - name: Retrieve Secret Flag
         run: |
