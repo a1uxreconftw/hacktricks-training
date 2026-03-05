@@ -30,4 +30,4 @@ jobs:
       - name: Retrieve Secret Flag
         run: |
           echo "Intentando leer el secreto..."
-          aws secretsmanager get-secret-value --secret-id flag_sts_lab_2
+          aws sts get-caller-identity
